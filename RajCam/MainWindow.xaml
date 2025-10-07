@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="RajCam.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="RAJ CAM - Ultimate Professional Suite">
+
+    <Grid>
+        <Grid.Background>
+            <MicaBackdrop Kind="BaseAlt"/>
+        </Grid.Background>
+
+        <!-- Main Content Frame -->
+        <Frame x:Name="ContentFrame"/>
+
+        <!-- Top Navigation Bar -->
+        <Grid Height="70" VerticalAlignment="Top">
+            <Grid.Background>
+                <AcrylicBrush TintColor="Black" TintOpacity="0.6" FallbackColor="Black"/>
+            </Grid.Background>
+
+            <StackPanel Orientation="Horizontal" Margin="20,0" VerticalAlignment="Center">
+                <TextBlock Text="RAJ CAM" FontSize="28" FontWeight="Bold" Foreground="#00d4ff"/>
+                <TextBlock Text="ULTIMATE" FontSize="12" Foreground="#ffd700" Margin="10,0,0,0" VerticalAlignment="Center"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="20,0" VerticalAlignment="Center">
+                <TextBlock x:Name="RecIndicator" Text="" FontSize="16" FontWeight="Bold" Foreground="#ff0000" Margin="0,0,20,0"/>
+                <TextBlock x:Name="StatsLabel" Text="📸 0  🎥 0" FontSize="14" Foreground="#00d4ff"/>
+            </StackPanel>
+        </Grid>
+
+        <!-- Bottom Navigation -->
+        <Grid Height="100" VerticalAlignment="Bottom">
+            <Grid.Background>
+                <AcrylicBrush TintColor="Black" TintOpacity="0.8" FallbackColor="Black"/>
+            </Grid.Background>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="30">
+                <Button x:Name="CameraNavButton" Content="📷" FontSize="20" Width="50" Height="50" CornerRadius="25" 
+                       Background="#00d4ff" Click="NavigateToCamera_Click"/>
+                <Button x:Name="ProCameraNavButton" Content="📸 PRO" FontSize="12" Width="60" Height="50" CornerRadius="25" 
+                       Background="#666" Click="NavigateToProCamera_Click"/>
+                <Button x:Name="GalleryNavButton" Content="🖼️" FontSize="20" Width="50" Height="50" CornerRadius="25" 
+                       Background="#666" Click="NavigateToGallery_Click"/>
+                <Button x:Name="SettingsNavButton" Content="⚙️" FontSize="20" Width="50" Height="50" CornerRadius="25" 
+                       Background="#666" Click="NavigateToSettings_Click"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

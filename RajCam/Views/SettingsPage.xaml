@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="RajCam.Views.SettingsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Grid>
+        <Grid.Background>
+            <AcrylicBrush TintColor="Black" TintOpacity="0.8"/>
+        </Grid.Background>
+
+        <ScrollViewer Padding="40">
+            <StackPanel Spacing="20">
+                <TextBlock Text="⚙️ SETTINGS" FontSize="28" FontWeight="Bold" Foreground="#00d4ff"/>
+
+                <!-- Resolution -->
+                <StackPanel>
+                    <TextBlock Text="Resolution" FontSize="16" Foreground="White" Margin="0,0,0,10"/>
+                    <ComboBox x:Name="ResolutionCombo" Width="300" HorizontalAlignment="Left">
+                        <ComboBoxItem Content="1920x1080 (Full HD)" IsSelected="True"/>
+                        <ComboBoxItem Content="1280x720 (HD)"/>
+                        <ComboBoxItem Content="640x480 (SD)"/>
+                    </ComboBox>
+                </StackPanel>
+
+                <!-- Filters -->
+                <StackPanel>
+                    <TextBlock Text="Filters" FontSize="16" Foreground="White" Margin="0,0,0,10"/>
+                    <ComboBox x:Name="FilterCombo" Width="300" HorizontalAlignment="Left">
+                        <ComboBoxItem Content="None" IsSelected="True"/>
+                        <ComboBoxItem Content="Grayscale"/>
+                        <ComboBoxItem Content="Sepia"/>
+                        <ComboBoxItem Content="Vintage"/>
+                        <ComboBoxItem Content="Cool"/>
+                        <ComboBoxItem Content="Warm"/>
+                    </ComboBox>
+                </StackPanel>
+
+                <!-- Brightness -->
+                <StackPanel>
+                    <TextBlock Text="Brightness" FontSize="16" Foreground="White" Margin="0,0,0,10"/>
+                    <Slider x:Name="BrightnessSlider" Width="300" HorizontalAlignment="Left" 
+                           Minimum="0" Maximum="100" Value="50"/>
+                </StackPanel>
+
+                <!-- Contrast -->
+                <StackPanel>
+                    <TextBlock Text="Contrast" FontSize="16" Foreground="White" Margin="0,0,0,10"/>
+                    <Slider x:Name="ContrastSlider" Width="300" HorizontalAlignment="Left" 
+                           Minimum="0" Maximum="100" Value="50"/>
+                </StackPanel>
+
+                <!-- Saturation -->
+                <StackPanel>
+                    <TextBlock Text="Saturation" FontSize="16" Foreground="White" Margin="0,0,0,10"/>
+                    <Slider x:Name="SaturationSlider" Width="300" HorizontalAlignment="Left" 
+                           Minimum="0" Maximum="100" Value="50"/>
+                </StackPanel>
+
+                <!-- Zoom -->
+                <StackPanel>
+                    <TextBlock Text="Zoom Level" FontSize="16" Foreground="White" Margin="0,0,0,10"/>
+                    <Slider x:Name="ZoomSlider" Width="300" HorizontalAlignment="Left" 
+                           Minimum="1" Maximum="10" Value="1"/>
+                </StackPanel>
+
+                <!-- Toggles -->
+                <ToggleSwitch x:Name="HdrToggle" Header="HDR Mode" Foreground="White"/>
+                <ToggleSwitch x:Name="GridToggle" Header="Grid Overlay" Foreground="White"/>
+                <ToggleSwitch x:Name="NightModeToggle" Header="Night Mode" Foreground="White"/>
+                <ToggleSwitch x:Name="BurstModeToggle" Header="Burst Mode" Foreground="White"/>
+                <ToggleSwitch x:Name="FlashToggle" Header="Flash" Foreground="White"/>
+                <ToggleSwitch x:Name="TimerToggle" Header="Timer" Foreground="White"/>
+
+                <!-- Buttons -->
+                <StackPanel Orientation="Horizontal" Spacing="20" Margin="0,20,0,0">
+                    <Button Content="Save Settings" Width="150" Background="#00d4ff"/>
+                    <Button Content="Reset to Default" Width="150" Background="#ff4444"/>
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>

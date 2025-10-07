@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "RajCam (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "RajCam (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
