@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAJ CAM - Ultimate Professional Camera Suite</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #fff; overflow-x: hidden; }
+        .hero { min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 20px; }
+        .hero h1 { font-size: 4rem; margin-bottom: 20px; animation: fadeInDown 1s; }
+        .hero p { font-size: 1.5rem; margin-bottom: 40px; animation: fadeInUp 1s; }
+        .btn { display: inline-block; padding: 15px 40px; background: #00d4ff; color: #000; text-decoration: none; border-radius: 50px; font-weight: bold; margin: 10px; transition: transform 0.3s; }
+        .btn:hover { transform: scale(1.1); }
+        .features { padding: 80px 20px; background: rgba(0,0,0,0.3); }
+        .features h2 { text-align: center; font-size: 3rem; margin-bottom: 60px; }
+        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto; }
+        .feature-card { background: rgba(255,255,255,0.1); padding: 30px; border-radius: 20px; backdrop-filter: blur(10px); transition: transform 0.3s; }
+        .feature-card:hover { transform: translateY(-10px); }
+        .feature-card h3 { font-size: 1.8rem; margin-bottom: 15px; color: #00d4ff; }
+        @keyframes fadeInDown { from { opacity: 0; transform: translateY(-50px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(50px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div>
+            <h1>📸 RAJ CAM</h1>
+            <p>Ultimate Professional Camera Suite for Windows 11</p>
+            <a href="https://github.com/RAJSARASWATI-JATAV/RajCam" class="btn">View on GitHub</a>
+            <a href="https://github.com/RAJSARASWATI-JATAV/RajCam/releases" class="btn">Download</a>
+        </div>
+    </div>
+
+    <div class="features">
+        <h2>✨ Features</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>🤖 AI-Powered</h3>
+                <p>Real-time Face Detection, AI Beautify, Portrait Mode with background blur</p>
+            </div>
+            <div class="feature-card">
+                <h3>📸 Professional</h3>
+                <p>Manual Exposure, Focus, ISO, White Balance controls. HDR & Night Mode</p>
+            </div>
+            <div class="feature-card">
+                <h3>🎥 4K Video</h3>
+                <p>4K @ 60fps, Slow Motion @ 240fps, Timelapse, Live Streaming</p>
+            </div>
+            <div class="feature-card">
+                <h3>🎨 Filters</h3>
+                <p>Professional filters: Grayscale, Sepia, Vintage, Cool, Warm, Dramatic</p>
+            </div>
+            <div class="feature-card">
+                <h3>⚡ Burst Mode</h3>
+                <p>Capture 5 rapid shots for action photography</p>
+            </div>
+            <div class="feature-card">
+                <h3>📤 Export</h3>
+                <p>Export to Pictures Library or custom location. Share functionality</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
