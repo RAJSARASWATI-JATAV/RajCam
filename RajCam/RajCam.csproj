@@ -11,7 +11,8 @@
     <WindowsAppSDKSelfContained>false</WindowsAppSDKSelfContained>
     <WindowsPackageType>None</WindowsPackageType>
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
-    <GenerateXamlMarkupCompilePass>false</GenerateXamlMarkupCompilePass>
+    <GenerateXamlMarkupCompilePass>true</GenerateXamlMarkupCompilePass>
+    <EnableDefaultXamlItems>true</EnableDefaultXamlItems>
   </PropertyGroup>
 
   <ItemGroup>
