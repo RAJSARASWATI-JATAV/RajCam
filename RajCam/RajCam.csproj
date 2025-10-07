@@ -10,9 +10,8 @@
     <EnableMsixTooling>false</EnableMsixTooling>
     <WindowsAppSDKSelfContained>false</WindowsAppSDKSelfContained>
     <WindowsPackageType>None</WindowsPackageType>
-    <PublishSingleFile>false</PublishSingleFile>
-    <SelfContained>false</SelfContained>
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <GenerateXamlMarkupCompilePass>false</GenerateXamlMarkupCompilePass>
   </PropertyGroup>
 
   <ItemGroup>

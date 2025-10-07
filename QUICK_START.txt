@@ -1,0 +1,45 @@
+========================================
+RAJ CAM - QUICK BUILD GUIDE
+========================================
+
+STEP 1: Open Visual Studio 2022
+--------------------------------
+Start Menu → Visual Studio 2022
+
+STEP 2: Open Solution
+----------------------
+File → Open → Project/Solution
+Select: RajCam.sln
+Location: C:\Users\Rajsa\OneDrive\Desktop\RajCam_WinUI3\RajCam.sln
+
+STEP 3: Set Configuration
+--------------------------
+Top toolbar:
+- Configuration: Release
+- Platform: x64
+
+STEP 4: Build
+-------------
+Press: Ctrl+Shift+B
+Or: Build → Build Solution
+
+STEP 5: Find EXE
+----------------
+Location:
+RajCam\bin\x64\Release\net8.0-windows10.0.19041.0\RajCam.exe
+
+STEP 6: Test
+------------
+Double-click RajCam.exe
+Allow Admin access
+App launches!
+
+STEP 7: Upload to GitHub
+-------------------------
+https://github.com/RAJSARASWATI-JATAV/RajCam/releases/new
+Tag: v1.0.0
+Upload: RajCam.exe
+
+========================================
+DONE! 🚀
+========================================
